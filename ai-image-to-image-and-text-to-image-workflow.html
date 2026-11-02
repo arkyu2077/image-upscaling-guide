@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Combining Text-to-Image and Image-to-Image Generation: Prompts, References and Models</title>
+<meta name="description" content="How to move from a blank-canvas text prompt to controlled image-to-image variations while keeping faces, poses and compositions consistent.">
+<link rel="canonical" href="https://arkyu2077.github.io/image-upscaling-guide/ai-image-to-image-and-text-to-image-workflow.html">
+<meta property="og:title" content="Combining Text-to-Image and Image-to-Image Generation: Prompts, References and Models">
+<meta property="og:description" content="How to move from a blank-canvas text prompt to controlled image-to-image variations while keeping faces, poses and compositions consistent.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://arkyu2077.github.io/image-upscaling-guide/ai-image-to-image-and-text-to-image-workflow.html">
+<meta property="og:image" content="https://arkyu2077.github.io/image-upscaling-guide/img/image-to-image.jpg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap"><a class="brand" href="index.html">AI Image Upscaling & Restoration Handbook</a><nav><a href="index.html">All guides</a></nav></div></header>
+<main><div class="wrap">
+<article>
+<h1>Combining Text-to-Image and Image-to-Image Generation: Prompts, References and Models</h1>
+<p class="meta">Published 2026-11-03 · 622 words</p>
+<figure><img src="img/image-to-image.jpg" alt="Detailed AI-generated character and scene produced through a multi-model text-to-image and image-to-image workflow"><figcaption>Detailed AI-generated character and scene produced through a multi-model text-to-image and image-to-image workflow</figcaption></figure>
+<p>Most creative projects need two different kinds of image generation at different stages. Early on, when you are exploring concepts, lighting directions or compositions from scratch, you want a text-to-image model that turns a written description into a fresh frame. Once you have a real product photo, a portrait or a strong initial concept, however, pure text prompting is too unpredictable—you need an image-to-image pass that changes the style, season, background or mood while locking the subject in place.</p>
+
+<h2>Starting from a blank canvas with Text to Image</h2>
+<p>A good <a href="https://monipix.com/tools/text-to-image">text-to-image generator</a> gives you control over three things before you hit generate: the framing ratio, the visual reference cues, and the underlying model family. On Monipix, the Text to Image workspace accepts prompts up to 5,000 characters, lets you attach up to 5 optional reference images to guide the look, and supports four core aspect ratios:</p>
+<ul>
+<li><strong>1:1 square</strong> for avatars, album covers and catalog tiles.</li>
+<li><strong>16:9 widescreen</strong> for blog headers, presentation slides and video storyboards.</li>
+<li><strong>9:16 vertical</strong> for mobile stories, Reels backgrounds and poster layouts.</li>
+<li><strong>4:3 classic</strong> for editorial illustrations and print-style framing.</li>
+</ul>
+<p>Instead of cramming fifty adjectives into one sentence, structure your prompt in four layers: <em>Subject and action → Environment and background → Lighting and color palette → Medium or lens style</em> (for example, 35mm editorial photo, warm watercolor, or crisp 3D render).</p>
+
+<h2>Keeping identity intact with Image to Image</h2>
+<p>When you already have a source photo—a person, a couple, a pet or a room—and want to restyle it, switch to the <a href="https://monipix.com/tools/image-to-image">AI image-to-image generator</a>. You can upload up to 5 JPG, PNG or WebP images per generation (up to 10 MB each) and instruct the model on both what to transform and what to leave untouched.</p>
+<p>The single most useful habit in image-to-image prompting is stating the anchor constraint explicitly in the first clause:</p>
+<ol>
+<li><strong>Lock the subject first.</strong> Write <em>"Keep the exact same face, expression and pose of the person in the photo..."</em> before describing the new outfit, studio lighting or autumn street background.</li>
+<li><strong>Change one variable per iteration.</strong> If you want to swap both the background environment and the artistic style, test the environment swap first so you can tell which instruction helped and which one drifted.</li>
+<li><strong>Draft cheap, finish at full resolution.</strong> Both Text to Image and Image to Image start at 4 credits per image at 0.5K preview resolution, and cost 8 credits at the default 2K setting. Running two 4-credit drafts to nail the composition before rendering your final 2K or upscaled 4K/8K master cuts credit spend in half.</li>
+</ol>
+
+<h2>Choosing across six image models in one workspace</h2>
+<p>Different models excel at different textures, prompt adherence and artistic styles. Buying a single credit pack (from 500 credits for $29.90, never expiring) or any subscription plan on Monipix unlocks all six image models under one credit balance:</p>
+<table>
+<tr><th>Model on Monipix</th><th>Best suited for</th></tr>
+<tr><td>Nano Banana 2 &amp; Nano Banana 2 Lite</td><td>Fast everyday generation, realistic portraits, costume and scene transforms</td></tr>
+<tr><td>Nano Banana Pro</td><td>High-precision detail, complex lighting and multi-element scenes</td></tr>
+<tr><td>GPT Image 2</td><td>Strong natural-language instruction following and multi-object layouts</td></tr>
+<tr><td>Seedream 4.5 &amp; Seedream 5.0 Pro</td><td>Stylized illustration, cinematic atmosphere and rich color grading</td></tr>
+</table>
+<p>Once your 2K generation is finished, you can send it straight into Monipix's AI Image Upscaler for 1 credit to produce an 8K or 16K print-ready file—and every image you generate or upscale on any plan carries full commercial usage rights for work you own, provided you hold the rights to any uploaded source photos and avoid prompts that imitate living artists or reproduce third-party trademarks. Saving your favorite reference frames and prompt structures in your project notes makes it easy to generate matching campaign assets whenever a new product line launches.</p>
+</article>
+</div></main>
+<footer><div class="wrap">AI Image Upscaling & Restoration Handbook · independent notes on AI image upscaling and restoration · <a href="sitemap.xml">Sitemap</a></div></footer>
+</body>
+</html>

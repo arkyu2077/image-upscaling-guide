@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Removing Unwanted Objects and Editing Text in Photos With Natural-Language Prompts</title>
+<meta name="description" content="How prompt-based AI object removal and in-image text replacement clean up travel, product and poster photos without manual brush masking or font matching.">
+<link rel="canonical" href="https://arkyu2077.github.io/image-upscaling-guide/remove-unwanted-objects-and-edit-text-in-photos.html">
+<meta property="og:title" content="Removing Unwanted Objects and Editing Text in Photos With Natural-Language Prompts">
+<meta property="og:description" content="How prompt-based AI object removal and in-image text replacement clean up travel, product and poster photos without manual brush masking or font matching.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://arkyu2077.github.io/image-upscaling-guide/remove-unwanted-objects-and-edit-text-in-photos.html">
+<meta property="og:image" content="https://arkyu2077.github.io/image-upscaling-guide/img/object-remover.webp">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap"><a class="brand" href="index.html">AI Image Upscaling & Restoration Handbook</a><nav><a href="index.html">All guides</a></nav></div></header>
+<main><div class="wrap">
+<article>
+<h1>Removing Unwanted Objects and Editing Text in Photos With Natural-Language Prompts</h1>
+<p class="meta">Published 2026-11-03 · 616 words</p>
+<figure><img src="img/object-remover.webp" alt="Travel photo of Niagara Falls after AI object removal cleanly erased a tour boat from the water"><figcaption>Travel photo of Niagara Falls after AI object removal cleanly erased a tour boat from the water</figcaption></figure>
+<p>Traditional photo retouching splits cleanup into two tedious chores: painting pixel-accurate masks around tourists, power lines or table clutter with a clone stamp, and hunting down matching fonts and perspective warps whenever a sign, poster or label has the wrong wording. Prompt-driven image editing replaces both manual steps with a single sentence—you tell the model what object to erase or which words to swap, and the model reconstructs the background or typography in context.</p>
+
+<h2>Erasing distractions without drawing a mask</h2>
+<p>Brush-based healing tools often leave a telltale smudge around complex boundaries like hair, tree branches, water ripples or glass reflections, because you have to decide exactly where the mask edge stops. With a prompt-driven <a href="https://monipix.com/tools/object-remover">AI object remover</a>, there is no brush or lasso. You upload a JPG, PNG or WebP image up to 10 MB (if your photo is a HEIC from an iPhone, export it to JPG first) and describe what should disappear in one clear sentence.</p>
+<p>Specific descriptions work best. Instead of writing "clean up background," write:</p>
+<ul>
+<li><em>"Remove the tour boat in the lower right water and fill with natural waves."</em></li>
+<li><em>"Erase the yellow sticky notes on the monitor bezel."</em></li>
+<li><em>"Remove the pedestrians walking behind the couple on the bridge."</em></li>
+</ul>
+<p>On Monipix, the Object Remover outputs at 1K, 2K or 4K resolution. The default 2K pass using Nano Banana Pro costs 10 credits (or 8 credits if you select the Nano Banana 2 model option), while a 4K export costs 18 credits. Because the model understands scene geometry, it rebuilds brick walls, lake reflections and wood grain across the area the object used to occupy.</p>
+
+<h2>Changing words, numbers and dates inside a photo</h2>
+<p>Fixing a typo on a printed banner, updating a store sign's hours, or localizing a mockup poster used to require rebuilding the entire text layer in a design app. When you only have the flattened image, the <a href="https://monipix.com/tools/edit-text-in-image">edit text in image</a> tool lets you specify the existing text and the replacement words in plain language while preserving the original lettering style, lighting, surface texture and perspective.</p>
+<p>Like Object Remover, it accepts JPG, PNG or WebP files up to 10 MB and exports at 1K or 2K for 10 credits, or 4K for 18 credits. To get reliable typography on the first or second run, keep three practical boundaries in mind:</p>
+<ol>
+<li><strong>Keep replacements short and direct.</strong> Single words, store names, prices, jersey numbers and dates come out cleanest. Long multi-line paragraphs, tiny fine print, heavily curved lettering or uncommon handwriting scripts are much harder for any image model to spell accurately, and results can vary between runs.</li>
+<li><strong>Quote the exact before and after strings.</strong> For example: <em>Change the sign text from "OPEN DAILY 9-5" to "OPEN DAILY 8-6" keeping the same white stencil letters.</em></li>
+<li><strong>Respect legal and ethical guardrails.</strong> Never use in-image text editing on government IDs, passports, official documents, receipts, invoices or certificates, or to alter logos and trademarks you do not own.</li>
+</ol>
+
+<h2>Account requirements and credit planning</h2>
+<p>While Monipix's 10 free monthly credits cover 2x–16x image upscaling, AI editing tools (Object Remover and Edit Text in Image) require a paid subscription—starting at $19.90/month for 600 credits—or any one-time credit pack (from $29.90 for 500 credits that never expire). Credits are held when a job starts and automatically refunded to your balance if a generation ever fails.</p>
+
+<h2>Cleanup workflow summary</h2>
+<table>
+<tr><th>Task</th><th>Input limit</th><th>Output tiers</th><th>Credits per run</th></tr>
+<tr><td>Object Remover (Nano Banana Pro default)</td><td>JPG/PNG/WebP up to 10 MB</td><td>1K, 2K, 4K</td><td>10 credits (1K/2K), 18 credits (4K)</td></tr>
+<tr><td>Object Remover (Nano Banana 2 option)</td><td>JPG/PNG/WebP up to 10 MB</td><td>2K</td><td>8 credits</td></tr>
+<tr><td>Edit Text in Image</td><td>JPG/PNG/WebP up to 10 MB</td><td>1K, 2K, 4K</td><td>10 credits (1K/2K), 18 credits (4K)</td></tr>
+</table>
+</article>
+</div></main>
+<footer><div class="wrap">AI Image Upscaling & Restoration Handbook · independent notes on AI image upscaling and restoration · <a href="sitemap.xml">Sitemap</a></div></footer>
+</body>
+</html>
